@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #312B2B;
+}
+/* Título */
+.header {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+
+.header__h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: #CDC2C2;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+}
+/* Navegación */
+.header__nav {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.header__nav ul {
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: #CDC2C2;
+    list-style: none;
+    margin-top: 40px;
+    margin-left: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header__nav li:hover{
+    border-bottom: 1px solid white;
+}
+
+.header__nav li {
+    margin-right: 60px;
+}
+
+a {
+    color:  #CDC2C2;
+    text-decoration: none;
+}
+/* Contenido Principal */
+.main {
+    width: 100%;
+    margin-top: 270px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Subtitulo */
+.main__h2 {
+    margin-bottom: 78px;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #CDC2C2;
+}
+/* Primer Artículo */
+.main__article {
+    padding: 25px;
+    padding-right: 0;
+    padding-left: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+/* Recuadros */
+.article__div {
+    width: 428px;
+    height: 409px;
+    padding: 15px;
+    margin-right: 35px;
+    background: #E95050;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Subtitulo */
+.article__div h3 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+}
+
+.article__div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* Iconos */
+.article__div1 .div__div {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 4px 18px white;
+    background: #312B2B;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.article__div1 .div__div2 {
+    margin-top: 5px;
+    margin-left: 24px;
+}
+/* Nombre */
+.div__p {
+   margin-top: 15px;
+   margin-left: 25px;
+   font-size: 38px;
+   font-weight: 300;
+   font-family: 'Roboto', sans-serif;
+   color: #FFFFFF;
+}
+/* Segundo Artículo */
+.main__article2 {
+    padding-top: 0;
+    padding: 25px;
+    padding-right: 0;
+    padding-left: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+/* Segundos Recuadros */
+.article2__div {
+    width: 428px;
+    height: 409px;
+    padding: 15px;
+    margin-right: 35px;
+    background: #E95050;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Subtitulo */
+.article2__div h3 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+}
+
+.article2__div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* Iconos */
+.article2__div1 .div__div {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 4px 18px white;
+    background: #312B2B;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.article2__div1 .div__div2 {
+    margin-top: 5px;
+    margin-left: 24px;
+}
+/* Nombre */
+.div__p {
+   margin-top: 15px;
+   margin-left: 25px;
+   font-size: 38px;
+   font-weight: 300;
+   font-family: 'Roboto', sans-serif;
+   color: #FFFFFF;
+}
+/* Margenes Izquierdos (Fotos-Integrantes) */
+.img__julian {
+    margin-left: 20px;
+}
+
+.img__mata {
+    margin-left: 87px;
+}
+
+.img__velez {
+    margin-left: 52px;
+}
+
+.img__jaiver {
+    margin-left: 5px;
+}
+
+.img__yeisi {
+    margin-left: 20px;
+}
+
+.img__ricardo {
+    margin-left: 30px;
+}
+
+.img__timbal {
+    margin-left: -3px;
+}
+/* Fin de la Página */
+.footer {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 46px;
+    margin-top: 56px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer__div {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background: #E95050;
+    margin-right: 42px;
+}
+
+.footer__div:hover {
+    background: #3EA9F3;
+}
+
+.footer__div .twitter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.div__div img {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.div__div .div__img {
+    width: 60px;
+    height: 60px;
+}
