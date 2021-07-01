@@ -3,10 +3,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* Variables */
+:root {
+    --bg-primary:#312B2B;
+    --bg-secondary:#E95050;
+    --bg-hover:#3EA9F3;
+    --color-primary:#CDC2C2; 
+    --font-primary:'Roboto', sans-serif;
+    --secondary-font:'Lato', sans-serif;
+    --border-bottom: 1px solid white;
+}
 
 body {
-    background: #312B2B;
+    background: var(--bg-primary);
 }
+
 /* Título */
 .header {
     width: 100%;
@@ -18,15 +29,17 @@ body {
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-    color: #CDC2C2;
-    font-family: 'Roboto', sans-serif;
+    color: var(--color-primary);
+    font-family: var(--font-primary);
     margin-top: 30px;
 }
 /* Navegación */
 .header__nav {
     width: 100%;
-    height: 50px;
-    padding: 5px;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .header__nav ul { 
@@ -34,10 +47,8 @@ body {
     font-size: 40px;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
-    color: #CDC2C2;
+    color: var(--color-primary);
     list-style: none;
-    margin-top: 40px;
-    margin-left: 40px;
 
     display: flex;
     flex-direction: row;
@@ -45,15 +56,15 @@ body {
 }
 
 .header__nav li:hover{
-    border-bottom: 1px solid white ;
+    border-bottom: var(--border-bottom);
 }
 
 .header__nav li {
-    margin-right: 60px;
+    margin-right: 30px;
 }
 
 a {
-    color:  #CDC2C2;
+    color: var(--color-primary);
     text-decoration: none;
 }
 /* Contenido Principal */
@@ -77,28 +88,26 @@ a {
 }
 
 .main__article h2 {
-    padding: 15px;
     font-size: 40px;
     font-weight: 600;
-    font-family: 'Lato', sans-serif;
-    color: #CDC2C2;
+    font-family: var(--secondary-font);
+    color: var(--color-primary);
 }
 /* Primer Párrafo */
 .main__article .article__p {
-    padding: 12px;
+    margin-top: 25px;
     font-size: 24px;
     font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    color: #CDC2C2;
+    font-family: var(--secondary-font);
+    color: var(--color-primary);
 }
 /* Segundo Párrafo */
 .main__article .article__p2 {
-    padding: 12px;
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 24px;
     font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    color: #CDC2C2;
+    font-family: var(--secondary-font);
+    color: var(--color-primary);
 }
 /* Fin de la Página */
 .footer {
@@ -116,12 +125,12 @@ a {
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    background: #E95050;
+    background: var(--bg-secondary);
     margin-right: 42px;
 }
 
 .footer__div:hover{
-    background: #3EA9F3;
+    background: var(--bg-hover);
 }
 
 .footer__div .twitter {
